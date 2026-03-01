@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ভাইটাল মিক্স & ফ্লোরাল গোল্ড হানি - Combo Offer</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              hind: ['"Hind Siliguri"', "sans-serif"],
+              inter: ["Inter", "Hind Siliguri", "sans-serif"],
+              noto: ["Noto Sans Bengali", "Inter", "sans-serif"],
+            },
+            colors: {
+              primary: "#2D6A4F", // Deep Green
+              secondary: "#D8F3DC", // Light Mint
+              accent: "#FFB703", // Gold for Honey
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Hind Siliguri", sans-serif;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="antialiased bg-gray-50 text-gray-900">
+    <section class="relative bg-white overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute -top-10 -left-10 w-40 h-40 bg-secondary rounded-full opacity-50"
+        ></div>
+        <div
+          class="absolute bottom-10 -right-10 w-60 h-60 bg-yellow-100 rounded-full opacity-30"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 py-12 md:py-20 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="text-center md:text-left">
+            <span
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-100 text-yellow-800 text-sm font-semibold mb-4 border border-yellow-200"
+            >
+              <i class="fas fa-crown text-accent"></i>
+              স্পেশাল কম্বো অফার
+            </span>
+
+            <h1
+              class="text-4xl md:text-6xl font-bold text-gray-950 leading-tight mb-6"
+            >
+              প্রকৃতির সেরা স্বাদ, <span class="text-primary">একসাথে!</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+              বায়োনিক ভাইটাল মিক্স-এর প্রাকৃতিক শক্তি এবং ফ্লোরাল গোল্ড হানি-র
+              বহু ফুলের স্বাদ,সুস্থ জীবনের জন্য নিখুঁত জুটি।
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+            >
+              <a
+                href="#order-form"
+                class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg hover:bg-emerald-800 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2"
+              >
+                <i class="fas fa-shopping-cart"></i>
+                কম্বো অর্ডার করুন
+              </a>
+              <a
+                href="#about"
+                class="px-8 py-4 bg-white text-primary font-bold rounded-xl border-2 border-primary hover:bg-secondary transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <i class="fas fa-info-circle"></i>
+                বিস্তারিত জানুন
+              </a>
+            </div>
+          </div>
+
+          <div class="relative flex justify-center items-center">
+            <div
+              class="absolute w-72 h-72 md:w-96 md:h-96 bg-secondary rounded-full flex justify-center items-center"
+            ></div>
+
+            <div
+              class="relative flex gap-1 -rotate-6 transform hover:rotate-0 transition-all duration-500"
+            >
+              <div
+                class="bg-white p-3 rounded-2xl shadow-2xl border border-gray-100 w-40 md:w-48"
+              >
+                <img
+                  src="vital_mix_product.png"
+                  alt="ভাইটাল মিক্স"
+                  class="w-full h-auto aspect-square object-contain"
+                />
+                <h3 class="text-center font-bold text-primary text-sm mt-2">
+                  ভাইটাল মিক্স
+                </h3>
+              </div>
+              <div
+                class="bg-white p-3 rounded-2xl shadow-2xl border border-gray-100 w-40 md:w-48 translate-y-8"
+              >
+                <img
+                  src="floral_gold_honey.png"
+                  alt="ফ্লোরাল গোল্ড হানি"
+                  class="w-full h-auto aspect-square object-contain"
+                />
+                <h3 class="text-center font-bold text-accent text-sm mt-2">
+                  ফ্লোরাল গোল্ড হানি
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-6 md:py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            প্রকৃতির সেরা উপাদানের সংমিশ্রণ
+          </h2>
+          <div class="w-24 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            স্বাস্থ্য ও স্বাদের নিখুঁত ভারসাম্য বজায় রাখতে আপনার প্রতিদিনের
+            খাদ্যতালিকায় যোগ করুন এই অনন্য কম্বো প্যাকটি।
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div
+            class="bg-gray-50 p-8 rounded-3xl border border-gray-100 flex flex-col md:flex-row gap-8 items-center"
+          >
+            <div class="w-full md:w-2/5 flex justify-center group">
+              <img
+                src="vital_mix.png"
+                alt="ভাইটাল মিক্স"
+                class="w-48 h-auto object-contain aspect-square rounded-2xl bg-white p-4 shadow-inner group-hover:scale-105 transaction duration-300"
+              />
+            </div>
+
+            <div class="w-full md:w-3/5 text-center md:text-left">
+              <h3 class="text-2xl font-bold text-primary mb-3">ভাইটাল মিক্স</h3>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                বায়োনিক ভাইটাল মিক্স হল প্রকৃতির সেরা উপাদান, যেমন সাইলিয়াম
+                ভুসি, চিয়া বীজ, এবং তুলসী বীজ দিয়ে তৈরি একটি প্রিমিয়াম
+                রেডি-টু-ড্রিঙ্ক মিশ্রণ।
+              </p>
+              <span
+                class="inline-block bg-primary/10 text-primary font-semibold px-4 py-1.5 rounded-full text-sm"
+              >
+                <i class="fas fa-weight-hanging mr-2"></i>নিট ওজন: ২০৫~ গ্রাম
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-3xl border border-gray-100 flex flex-col md:flex-row gap-8 items-center"
+          >
+            <div class="w-full md:w-2/5 flex justify-center group">
+              <img
+                src="floral_gold_honey.png"
+                alt="ফ্লোরাল গোল্ড হানি"
+                class="w-48 h-auto object-contain aspect-square rounded-2xl bg-white p-4 shadow-inner group-hover:scale-105 transaction duration-300"
+              />
+            </div>
+            <div class="w-full md:w-3/5 text-center md:text-left">
+              <h3 class="text-2xl font-bold text-accent mb-3">
+                ফ্লোরাল গোল্ড হানি
+              </h3>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                প্ৰকৃতি বহু ফুলের স্বাদ এক ফোঁটায়! এটি প্রায় ১০টি ভিন্ন ফুল
+                থেকে সংগৃহীত মধু, যা শতভাগ খাঁটি, প্রাকৃতিক এবং কৃত্রিম চিনি বা
+                সংরক্ষণকারী মুক্ত।
+              </p>
+              <span
+                class="inline-block bg-accent/10 text-accent font-semibold px-4 py-1.5 rounded-full text-sm"
+              >
+                <i class="fas fa-weight-hanging mr-2"></i>নিট ওজন: ২৫৫~ গ্রাম
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="py-6 md:py-12 bg-secondary/30">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            আপনার সুস্থতায় কার্যকরী জুটি
+          </h2>
+          <div class="w-24 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            প্রাকৃতিক উপাদানে ভরপুর এই কম্বো প্যাকটি আপনার শরীরকে সতেজ, সচল এবং
+            রোগমুক্ত রাখতে সাহায্য করে।
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center text-3xl mb-6"
+            >
+              <i class="fas fa-shield-virus"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-950 mb-3">
+              রোগ প্রতিরোধ ক্ষমতা
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              মধু এবং ভাইটাল মিক্সের প্রাকৃতিক অ্যান্টিঅক্সিডেন্ট শরীরের রোগ
+              প্রতিরোধ ক্ষমতা বৃদ্ধিতে সরাসরি সহায়তা করে।
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center text-3xl mb-6"
+            >
+              <i class="fas fa-microscope"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-950 mb-3">
+              হজম ও ডিটক্সিফিকেশন
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              সাইলিয়াম ভুসি ফাইবার হিসেবে কাজ করে এবং মধু হজম প্রক্রিয়ার
+              উন্নতি ঘটিয়ে শরীর থেকে টক্সিন বের করতে সাহায্য করে।
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 text-primary rounded-full flex items-center justify-center text-3xl mb-6"
+            >
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-950 mb-3">
+              প্রাকৃতিক শক্তি
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              চিয়া বীজ ও মধুর প্রাকৃতিক গ্লুকোজ সারাদিন আপনাকে রাখবে সতেজ,
+              কর্মক্ষম ও প্রাণবন্ত।
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="py-6 md:py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            গুণমান ও আস্থার প্রতীক
+          </h2>
+          <div class="w-24 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            আমাদের পণ্যগুলো আন্তর্জাতিক মানের সার্টিফিকেশন দ্বারা পরীক্ষিত এবং
+            অনুমোদিত।
+          </p>
+        </div>
+
+        <div
+          class="flex flex-wrap justify-center items-center gap-10 md:gap-16 lg:gap-20"
+        >
+          <!-- ISO -->
+          <div
+            class="group flex flex-col items-center text-center transition duration-300 hover:scale-105 hover:-translate-y-1"
+          >
+            <img
+              src="cert-iso-22000.png"
+              alt="ISO 22000 Certified"
+              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
+              >ISO 22000</span
+            >
+          </div>
+
+          <!-- Halal -->
+          <div
+            class="group flex flex-col items-center text-center transition duration-300 hover:scale-105 hover:-translate-y-1"
+          >
+            <img
+              src="cert-halal.png"
+              alt="Halal Certified"
+              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
+              >Halal Certified</span
+            >
+          </div>
+
+          <!-- HACCP -->
+          <div
+            class="group flex flex-col items-center text-center transition duration-300 hover:scale-105 hover:-translate-y-1"
+          >
+            <img
+              src="cert-haccp.png"
+              alt="HACCP Certified"
+              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
+              >HACCP</span
+            >
+          </div>
+
+          <!-- GMP Quality -->
+          <div
+            class="group flex flex-col items-center text-center transition duration-300 hover:scale-105 hover:-translate-y-1"
+          >
+            <img
+              src="gmp-quality.png"
+              alt="GMP Quality"
+              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
+              >GMP Quality</span
+            >
+          </div>
+
+          <!-- BSTI (added since it's in your product list) -->
+          <!-- <div
+            class="group flex flex-col items-center text-center transition duration-300 hover:scale-105 hover:-translate-y-1"
+          >
+            <img
+              src="cert-bsti.png"
+              alt="BSTI Approved"
+              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
+              >BSTI Approved</span
+            >
+          </div> -->
+        </div>
+        <div class="flex justify-center mt-4">
+          <img
+            src="check-out-security.webp"
+            alt="Security Checkout"
+            className="w-full h-auto object-contain "
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="order-form" class="py-6 md:py-12 bg-white">
+      <div class="max-w-2xl mx-auto px-4 font-noto">
+        <div
+          class="bg-gray-50 border border-primary/10 rounded-2xl p-6 md:p-8 shadow-sm"
+        >
+          <div class="text-center mb-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+              অর্ডার কনফার্ম করুন
+            </h2>
+            <p class="text-primary text-base italic">
+              সারা বাংলাদেশে ক্যাশ অন ডেলিভারি
+            </p>
+          </div>
+
+          <form id="orderForm" class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="আপনার নাম *"
+                required
+                class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none text-sm transition-all"
+              />
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="মোবাইল নম্বর *"
+                required
+                class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none text-sm transition-all"
+              />
+            </div>
+
+            <input
+              type="text"
+              name="address"
+              placeholder="পূর্ণ ঠিকানা (বাসা নম্বর, রোড, এলাকা, জেলা) *"
+              required
+              class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none text-sm transition-all"
+            />
+
+            <div class="grid grid-cols-2 gap-3">
+              <label
+                class="flex items-center p-3 border rounded-xl cursor-pointer hover:bg-secondary/10 border-primary bg-secondary/5 transition-all"
+              >
+                <input
+                  type="radio"
+                  name="qty"
+                  value="1"
+                  class="w-3 h-3 text-primary"
+                  checked
+                  onchange="updateSummary()"
+                />
+                <div class="ml-2 text-sm">
+                  <span class="block font-bold">১টি কম্বো প্যাক</span>
+                  <span class="text-gray-500">৳১০০০ + ডেলিভারি</span>
+                </div>
+              </label>
+              <label
+                class="flex items-center p-3 border rounded-xl cursor-pointer hover:bg-secondary/10 border-gray-200 transition-all"
+              >
+                <input
+                  type="radio"
+                  name="qty"
+                  value="2"
+                  class="w-3 h-3 text-primary"
+                  onchange="updateSummary()"
+                />
+                <div class="ml-2 text-sm">
+                  <span class="block font-bold">২টি কম্বো প্যাক</span>
+                  <span class="text-green-600 font-semibold"
+                    >৳১৯০০ (ফ্রি ডেলিভারি)</span
+                  >
+                </div>
+              </label>
+            </div>
+
+            <div
+              class="bg-white p-3 rounded-lg border border-gray-100 shadow-inner"
+            >
+              <p class="text-base font-bold text-gray-500 mb-2">
+                ডেলিভারি এলাকা
+              </p>
+              <div class="grid grid-cols-3 gap-2">
+                <label
+                  class="flex flex-col items-center p-2 border rounded-lg cursor-pointer text-center hover:border-primary transition-all"
+                >
+                  <input
+                    type="radio"
+                    name="area"
+                    value="60"
+                    class="hidden"
+                    checked
+                    onchange="updateSummary()"
+                  />
+                  <span class="text-sm font-bold">ঢাকা সিটি</span>
+                  <span class="text-sm text-primary font-noto">৳৬০</span>
+                </label>
+                <label
+                  class="flex flex-col items-center p-2 border rounded-lg cursor-pointer text-center hover:border-primary transition-all"
+                >
+                  <input
+                    type="radio"
+                    name="area"
+                    value="100"
+                    class="hidden"
+                    onchange="updateSummary()"
+                  />
+                  <span class="text-sm font-bold">ঢাকার আশেপাশে</span>
+                  <span class="text-sm text-primary font-noto">৳১০০</span>
+                </label>
+                <label
+                  class="flex flex-col items-center p-2 border rounded-lg cursor-pointer text-center hover:border-primary transition-all"
+                >
+                  <input
+                    type="radio"
+                    name="area"
+                    value="130"
+                    class="hidden"
+                    onchange="updateSummary()"
+                  />
+                  <span class="text-sm font-bold">ঢাকার বাইরে</span>
+                  <span class="text-sm text-primary font-noto">৳১৩০</span>
+                </label>
+              </div>
+            </div>
+
+            <div
+              class="px-2 py-3 bg-primary/5 rounded-lg border border-primary/10 text-sm space-y-1"
+            >
+              <div class="flex justify-between text-gray-600">
+                <span>মূল্য:</span>
+                <span class="font-noto">৳ <span id="subtotal">১০০০</span></span>
+              </div>
+              <div class="flex justify-between text-gray-600">
+                <span>ডেলিভারি চার্জ:</span>
+                <span id="delivery-display" class="font-noto">৳ ৬০</span>
+              </div>
+              <div
+                class="flex justify-between border-t border-primary/10 pt-1 mt-1 font-bold text-primary text-base"
+              >
+                <span>সর্বমোট:</span>
+                <span class="font-noto">৳ <span id="total">১০৬০</span></span>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-4 bg-primary hover:bg-emerald-800 text-white font-bold text-lg rounded-xl shadow-lg transform transition-all active:scale-95 flex items-center justify-center gap-2"
+            >
+              অর্ডার কনফার্ম করুন
+            </button>
+            <p class="text-center text-xs text-gray-500 mt-4 italic">
+              <i class="fas fa-lock mr-1"></i> আপনার তথ্য আমাদের কাছে সম্পূর্ণ
+              নিরাপদ।
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="usage" class="py-6 md:py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            ব্যবহারের নিয়মাবলী
+          </h2>
+          <div class="w-24 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            সুফল পেতে নিয়ম মেনে সঠিক উপায়ে মিশ্রণটি প্রস্তুত করুন।
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-primary text-white font-bold rounded-full flex items-center justify-center text-xl shadow-md"
+              >
+                ১
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-gray-950 mb-1">
+                  পাউডার ও পানি নিন
+                </h4>
+                <p class="text-gray-600">
+                  এক গ্লাস কুসুম গরম পানিতে ২ চামচ ভাইটাল মিক্স পাউডার মেশান।
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-primary text-white font-bold rounded-full flex items-center justify-center text-xl shadow-md"
+              >
+                ২
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-gray-950 mb-1">
+                  মধু যোগ করুন
+                </h4>
+                <p class="text-gray-600">
+                  মিশ্রণটিতে এক চা চামচ ফ্লোরাল গোল্ড হানি ভালোভাবে মিশিয়ে নিন।
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-primary text-white font-bold rounded-full flex items-center justify-center text-xl shadow-md"
+              >
+                ৩
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-gray-950 mb-1">উপভোগ করুন</h4>
+                <p class="text-gray-600">
+                  সকালে খালি পেটে বা প্রয়োজন অনুযায়ী পান করুন। চাইলে শরবত বা
+                  স্মুদিতেও ব্যবহার করা যাবে।
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-secondary/20 p-6 rounded-3xl border border-secondary/30"
+          >
+            <img
+              src="Preparation_Video_thumb.png"
+              alt="প্রস্তুত প্রণালী নির্দেশিকা"
+              class="w-full h-auto rounded-2xl shadow-inner aspect-[16/9] object-cover"
+            />
+            <div
+              class="mt-6 p-4 bg-white rounded-xl border border-gray-100 flex items-center gap-3 shadow-sm"
+            >
+              <i class="fas fa-info-circle text-primary text-2xl"></i>
+              <p class="text-sm text-gray-600">
+                <strong>সংরক্ষণ:</strong> জারের ঢাকনা ভালোভাবে বন্ধ রাখুন এবং
+                শুষ্ক ও ছায়াযুক্ত স্থানে সংরক্ষণ করুন। ফ্রিজে রাখার প্রয়োজন
+                নেই।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-6 md:py-12 bg-secondary/30">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            আমাদের গ্রাহকদের অভিজ্ঞতা
+          </h2>
+          <div class="w-24 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            সন্তুষ্ট গ্রাহকদের মতামত, যারা এই অনন্য কম্বো প্যাকটি ব্যবহার করে
+            উপকৃত হয়েছেন।
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-accent mb-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-600 italic mb-6">
+                "ভাইটাল মিক্স এবং এই খাঁটি মধুর কম্বোটি আমার সকালের রুটিন বদলে
+                দিয়েছে। হজম শক্তি অনেক বেড়েছে!"
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t pt-6">
+              <img
+                src="user_1.png"
+                alt="User 1"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <h5 class="font-bold text-gray-950">রাহিম আহমেদ</h5>
+                <p class="text-sm text-gray-500">ঢাকা</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-accent mb-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-600 italic mb-6">
+                "মধুটির ঘ্রাণ এবং ঘনত্ব অসাধারণ! ভাইটাল মিক্সের সাথে মিশিয়ে খেলে
+                সারাদিন এনার্জি থাকে।"
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t pt-6">
+              <img
+                src="user_2.png"
+                alt="User 2"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <h5 class="font-bold text-gray-950">ফাতেমা জোহরা</h5>
+                <p class="text-sm text-gray-500">চট্টগ্রাম</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-accent mb-4">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <p class="text-gray-600 italic mb-6">
+                "চমৎকার প্যাকেজিং এবং দ্রুত ডেলিভারি। পণ্যের মান নিয়ে কোনো
+                সন্দেহ নেই। সবাইকে সাজেস্ট করব।"
+              </p>
+            </div>
+            <div class="flex items-center gap-4 border-t pt-6">
+              <img
+                src="user_3.png"
+                alt="User 3"
+                class="w-12 h-12 rounded-full object-cover"
+              />
+              <div>
+                <h5 class="font-bold text-gray-950">ইমরান হোসেন</h5>
+                <p class="text-sm text-gray-500">সিলেট</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="successPopup"
+      class="fixed inset-0 bg-gray-900/50 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-3xl p-8 shadow-2xl max-w-sm w-full text-center transform transition-all scale-95"
+        id="popupContent"
+      >
+        <div
+          class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-5xl mx-auto mb-6"
+        >
+          <i class="fas fa-check"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-950 mb-2">
+          অর্ডার সফল হয়েছে!
+        </h3>
+        <p class="text-gray-600 mb-6">
+          আপনার অর্ডারটি আমাদের কাছে পৌঁছেছে। আমাদের প্রতিনিধি দ্রুতই আপনার সাথে
+          যোগাযোগ করবেন।
+        </p>
+        <button
+          onclick="closePopup()"
+          class="w-full py-3 bg-primary text-white font-bold rounded-xl hover:bg-emerald-800 transition"
+        >
+          ধন্যবাদ
+        </button>
+      </div>
+    </div>
+
+    <!-- Whatsapp Button -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center justify-center">
+      <span
+        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"
+      ></span>
+
+      <a
+        href="https://wa.me/8801733358158?text=আসসালামু আলাইকুম, আমি ভাইটাল মিক্স & ফ্লোরাল গোল্ড হানি - Combo Offer সম্পর্কে জানতে চাই।"
+        target="_blank"
+        class="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 group animate-bounce"
+        style="animation-duration: 3s"
+        aria-label="Contact on WhatsApp"
+      >
+        <i class="fab fa-whatsapp text-3xl"></i>
+
+        <span
+          class="absolute right-16 bg-white text-gray-800 text-sm font-bold px-3 py-1 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap border border-gray-100"
+        >
+          হোয়াটসঅ্যাপে মেসেজ দিন
+        </span>
+      </a>
+    </div>
+
+    <script>
+      // Function to convert English numbers to Bengali
+      function toBengaliNumber(n) {
+        const englishDigits = {
+          0: "০",
+          1: "১",
+          2: "২",
+          3: "৩",
+          4: "৪",
+          5: "৫",
+          6: "৬",
+          7: "৭",
+          8: "৮",
+          9: "৯",
+        };
+        return n
+          .toString()
+          .split("")
+          .map((digit) => englishDigits[digit] || digit)
+          .join("");
+      }
+
+      function updateSummary() {
+        const qty = document.querySelector('input[name="qty"]:checked').value;
+        const areaInput = document.querySelector('input[name="area"]:checked');
+        const areaCharge = parseInt(areaInput.value);
+
+        // Highlight Area Labels
+        document.querySelectorAll('input[name="area"]').forEach((input) => {
+          input.parentElement.classList.toggle("border-primary", input.checked);
+          input.parentElement.classList.toggle("bg-primary/5", input.checked);
+        });
+
+        // Highlight Quantity Labels
+        document.querySelectorAll('input[name="qty"]').forEach((input) => {
+          input.parentElement.classList.toggle("border-primary", input.checked);
+          input.parentElement.classList.toggle("bg-secondary/5", input.checked);
+          input.parentElement.classList.toggle(
+            "border-gray-200",
+            !input.checked,
+          );
+        });
+
+        // New Prices for Combo Deal
+        let subtotal = qty === "1" ? 1000 : 1900;
+        let deliveryCharge = qty === "1" ? areaCharge : 0;
+        let total = subtotal + deliveryCharge;
+
+        // Display values in Bengali digits
+        document.getElementById("subtotal").innerText =
+          toBengaliNumber(subtotal);
+
+        if (deliveryCharge === 0) {
+          document.getElementById("delivery-display").innerText = "ফ্রি!";
+          document
+            .getElementById("delivery-display")
+            .classList.remove("font-noto");
+        } else {
+          document.getElementById("delivery-display").innerText =
+            "৳ " + toBengaliNumber(deliveryCharge);
+          document
+            .getElementById("delivery-display")
+            .classList.add("font-noto");
+        }
+
+        document.getElementById("total").innerText = toBengaliNumber(total);
+      }
+
+      // Initial call to set correct digits on load
+      updateSummary();
+
+      // Popup Logic
+      const orderForm = document.getElementById("orderForm");
+      const successPopup = document.getElementById("successPopup");
+      const popupContent = document.getElementById("popupContent");
+
+      orderForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent actual form submission for demo
+
+        // Show popup
+        successPopup.classList.remove("hidden");
+        setTimeout(() => {
+          popupContent.classList.remove("scale-95");
+          popupContent.classList.add("scale-100");
+        }, 10);
+      });
+
+      function closePopup() {
+        popupContent.classList.remove("scale-100");
+        popupContent.classList.add("scale-95");
+        setTimeout(() => {
+          successPopup.classList.add("hidden");
+          orderForm.reset();
+          updateSummary();
+        }, 300);
+      }
+    </script>
+
+    <!-- Gsap -->
+    <script>
+      // Register the plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animate Section Headings (Fade in and move up)
+      gsap.utils.toArray("h2").forEach((heading) => {
+        gsap.from(heading, {
+          scrollTrigger: {
+            trigger: heading,
+            start: "top 85%",
+          },
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out",
+        });
+      });
+    </script>
+  </body>
+</html>

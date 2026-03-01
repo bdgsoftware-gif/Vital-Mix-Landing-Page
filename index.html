@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ভাইটাল মিক্স - Premium Health Mix</title>
-
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -20,6 +20,7 @@
             fontFamily: {
               hind: ['"Hind Siliguri"', "sans-serif"],
               inter: ["Inter", "Hind Siliguri", "sans-serif"],
+              noto: ["Noto Sans Bengali", "Inter", "sans-serif"],
             },
             colors: {
               primary: "#2D6A4F", // Deep Green
@@ -43,6 +44,9 @@
         font-family: "Hind Siliguri", sans-serif;
       }
     </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </head>
   <body
     class="min-h-screen antialiased text-gray-800 bg-gradient-to-br from-white to-secondary/30"
@@ -107,7 +111,7 @@
       </div>
     </section> -->
 
-    <section class="relative font-hind py-16 md:py-24 overflow-hidden">
+    <section class="relative py-16 md:py-24 overflow-hidden">
       <!-- Background Giant Text -->
       <div
         class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10"
@@ -183,9 +187,10 @@
           <!-- CTA Button -->
           <a
             href="#order-form"
-            class="inline-block bg-[#113A31] text-white px-6 py-3 rounded-full text-sm md:text-base font-semibold hover:bg-emerald-700 transition-colors duration-300 shadow-md"
+            class="inline-block animate-pulse bg-[#113A31] text-white px-8 py-4 rounded-full text-base md:text-lg font-bold hover:bg-emerald-700 hover:scale-105 hover:animate-none transition-all duration-300 shadow-xl"
+            style="animation-duration: 2.5s"
           >
-            Shop Now
+            এখনই অর্ডার করুন
           </a>
         </div>
 
@@ -216,7 +221,7 @@
         <h2
           class="mt-6 text-base sm:text-xl lg:text-2xl font-bold text-gray-900 font-inter"
         >
-          Quality & Safety Standards
+          গুণমান ও আস্থার প্রতীক
         </h2>
         <p
           class="mt-4 text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed"
@@ -290,7 +295,7 @@
         </div>
 
         <!-- BSTI (added since it's in your product list) -->
-        <div
+        <!-- <div
           class="group flex flex-col items-center text-center transition duration-300 hover:scale-105 hover:-translate-y-1"
         >
           <img
@@ -302,7 +307,7 @@
           <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
             >BSTI Approved</span
           >
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -486,99 +491,155 @@
     </section>
 
     <!-- Order form -->
-    <section id="order-form" class="py-20 bg-white">
-      <div class="max-w-3xl mx-auto px-4">
+    <section id="order-form" class="py-10 bg-white">
+      <div class="max-w-2xl mx-auto px-4 font-noto">
         <div
-          class="bg-gray-50 border-2 border-primary/10 rounded-3xl p-8 md:p-12 shadow-sm"
+          class="bg-gray-50 border border-primary/10 rounded-2xl p-6 md:p-8 shadow-sm"
         >
-          <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold text-gray-900 mb-2">
-              অর্ডার কনফার্ম করতে ফর্মটি পূরণ করুন
+          <div class="text-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-900">
+              অর্ডার কনফার্ম করুন
             </h2>
-            <p class="text-primary font-medium italic">
-              সারা বাংলাদেশে ক্যাশ অন ডেলিভারি সুবিধা!
+            <p class="text-primary text-sm italic">
+              সারা বাংলাদেশে ক্যাশ অন ডেলিভারি
             </p>
           </div>
 
-          <form class="space-y-6">
-            <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-2"
-                >আপনার নাম *</label
-              >
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
-                placeholder="আপনার পুরো নাম লিখুন"
-                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                placeholder="আপনার নাম *"
+                required
+                class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none text-sm transition-all"
               />
-            </div>
 
-            <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-2"
-                >মোবাইল নম্বর *</label
-              >
               <input
                 type="tel"
-                placeholder="আপনার সচল মোবাইল নম্বর দিন"
-                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                placeholder="মোবাইল নম্বর *"
+                required
+                class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none text-sm transition-all"
               />
             </div>
 
-            <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-2"
-                >পূর্ণ ঠিকানা (বাসা/রোড নম্বর, জেলা) *</label
+            <input
+              type="text"
+              placeholder="পূর্ণ ঠিকানা (বাসা নম্বর, রোড, এলাকা, জেলা) *"
+              required
+              class="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none text-sm transition-all"
+            />
+
+            <div class="grid grid-cols-2 gap-3">
+              <label
+                class="flex items-center p-3 border rounded-xl cursor-pointer hover:bg-secondary/10 border-primary bg-secondary/5 transition-all"
               >
-              <textarea
-                rows="3"
-                placeholder="আপনার বিস্তারিত ঠিকানা লিখুন"
-                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-              ></textarea>
+                <input
+                  type="radio"
+                  name="qty"
+                  value="1"
+                  class="w-3 h-3 text-primary"
+                  checked
+                  onchange="updateSummary()"
+                />
+                <div class="ml-2 text-sm">
+                  <span class="block font-bold">১ টি জার</span>
+                  <span class="text-gray-500">৳৪৯৫ + ডেলিভারি</span>
+                </div>
+              </label>
+              <label
+                class="flex items-center p-3 border rounded-xl cursor-pointer hover:bg-secondary/10 border-gray-200 transition-all"
+              >
+                <input
+                  type="radio"
+                  name="qty"
+                  value="2"
+                  class="w-3 h-3 text-primary"
+                  onchange="updateSummary()"
+                />
+                <div class="ml-2 text-sm">
+                  <span class="block font-bold">২ টি জার</span>
+                  <span class="text-green-600 font-semibold"
+                    >৳৯৫০ (ফ্রি ডেলিভারি)</span
+                  >
+                </div>
+              </label>
             </div>
 
             <div
-              class="bg-white p-4 rounded-xl border border-gray-100 shadow-inner"
+              class="bg-white p-3 rounded-lg border border-gray-100 shadow-inner"
             >
-              <label class="block text-sm font-bold text-gray-900 mb-4"
-                >পরিমাণ সিলেক্ট করুন</label
-              >
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <p class="text-base font-bold text-gray-500 mb-2">
+                ডেলিভারি এলাকা
+              </p>
+              <div class="grid grid-cols-3 gap-2">
                 <label
-                  class="relative flex items-center p-4 border rounded-xl cursor-pointer hover:bg-secondary/10 border-primary bg-secondary/5"
+                  class="flex flex-col items-center p-2 border rounded-lg cursor-pointer text-center hover:border-primary transition-all"
                 >
                   <input
                     type="radio"
-                    name="qty"
-                    class="w-4 h-4 text-primary"
+                    name="area"
+                    value="60"
+                    class="hidden"
                     checked
+                    onchange="updateSummary()"
                   />
-                  <div class="ml-3">
-                    <span class="block font-bold">১ টি জার</span>
-                    <span class="text-base text-gray-600"
-                      >৳৪৯৫ + ডেলিভারি চার্জ</span
-                    >
-                  </div>
+                  <span class="text-sm font-bold">ঢাকা সিটি</span>
+                  <span class="text-sm text-primary">৳৬০</span>
                 </label>
                 <label
-                  class="relative flex items-center p-4 border rounded-xl cursor-pointer hover:bg-secondary/10 border-gray-200"
+                  class="flex flex-col items-center p-2 border rounded-lg cursor-pointer text-center hover:border-primary transition-all"
                 >
-                  <input type="radio" name="qty" class="w-4 h-4 text-primary" />
-                  <div class="ml-3">
-                    <span class="block font-bold">২ টি জার</span>
-                    <span class="text-base text-gray-600"
-                      >৳৯৫০ (ডেলিভারি ফ্রি!)</span
-                    >
-                  </div>
+                  <input
+                    type="radio"
+                    name="area"
+                    value="100"
+                    class="hidden"
+                    onchange="updateSummary()"
+                  />
+                  <span class="text-sm font-bold">ঢাকার আশেপাশে</span>
+                  <span class="text-sm text-primary">৳১০০</span>
                 </label>
+                <label
+                  class="flex flex-col items-center p-2 border rounded-lg cursor-pointer text-center hover:border-primary transition-all"
+                >
+                  <input
+                    type="radio"
+                    name="area"
+                    value="130"
+                    class="hidden"
+                    onchange="updateSummary()"
+                  />
+                  <span class="text-sm font-bold">ঢাকার বাইরে</span>
+                  <span class="text-sm text-primary">৳১৩০</span>
+                </label>
+              </div>
+            </div>
+
+            <div
+              class="px-2 py-3 bg-primary/5 rounded-lg border border-primary/10 text-sm space-y-1"
+            >
+              <div class="flex justify-between text-gray-600">
+                <span>মূল্য:</span>
+                <span class="">৳ <span id="subtotal">৪৯৫</span></span>
+              </div>
+              <div class="flex justify-between text-gray-600">
+                <span>ডেলিভারি চার্জ:</span>
+                <span id="delivery-display" class="">৳ ৬০</span>
+              </div>
+              <div
+                class="flex justify-between border-t border-primary/10 pt-1 mt-1 font-bold text-primary text-base"
+              >
+                <span>সর্বমোট:</span>
+                <span class="">৳ <span id="total">৫৫৫</span></span>
               </div>
             </div>
 
             <button
               type="submit"
-              class="w-full py-5 bg-primary hover:bg-primary/90 text-white font-bold text-xl rounded-2xl shadow-xl shadow-primary/20 transform transition-all active:scale-95 flex items-center justify-center gap-3"
+              class="w-full py-4 bg-primary hover:bg-emerald-800 text-white font-bold text-lg rounded-xl shadow-lg transform transition-all active:scale-95 flex items-center justify-center gap-2"
             >
-              <i class="fas fa-shopping-cart"></i>
               অর্ডার কনফার্ম করুন
             </button>
-
             <p class="text-center text-xs text-gray-500 mt-4 italic">
               <i class="fas fa-lock mr-1"></i> আপনার তথ্য আমাদের কাছে সম্পূর্ণ
               নিরাপদ।
@@ -762,6 +823,29 @@
       </div>
     </section>
 
+    <!-- Whatsapp Button -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center justify-center">
+      <span
+        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"
+      ></span>
+
+      <a
+        href="https://wa.me/8801733358158?text=আসসালামু আলাইকুম, আমি ভাইটাল মিক্স সম্পর্কে জানতে চাই।"
+        target="_blank"
+        class="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 group animate-bounce"
+        style="animation-duration: 3s"
+        aria-label="Contact on WhatsApp"
+      >
+        <i class="fab fa-whatsapp text-3xl"></i>
+
+        <span
+          class="absolute right-16 bg-white text-gray-800 text-sm font-bold px-3 py-1 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap border border-gray-100"
+        >
+          হোয়াটসঅ্যাপে মেসেজ দিন
+        </span>
+      </a>
+    </div>
+    <!-- How to prepare Script -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const videoContainer = document.getElementById("video-container");
@@ -777,6 +861,82 @@
           // Show and play video
           actualVideo.classList.remove("hidden");
           actualVideo.play();
+        });
+      });
+    </script>
+    <!-- Order Form -->
+    <script>
+      // Function to convert English numbers to Bengali
+      function toBengaliNumber(n) {
+        const englishDigits = {
+          0: "০",
+          1: "১",
+          2: "২",
+          3: "৩",
+          4: "৪",
+          5: "৫",
+          6: "৬",
+          7: "৭",
+          8: "৮",
+          9: "৯",
+        };
+        return n
+          .toString()
+          .split("")
+          .map((digit) => englishDigits[digit] || digit)
+          .join("");
+      }
+
+      function updateSummary() {
+        const qty = document.querySelector('input[name="qty"]:checked').value;
+        const areaInput = document.querySelector('input[name="area"]:checked');
+        const areaCharge = parseInt(areaInput.value);
+
+        // Highlight Area Labels
+        document.querySelectorAll('input[name="area"]').forEach((input) => {
+          input.parentElement.classList.toggle("border-primary", input.checked);
+          input.parentElement.classList.toggle("bg-primary/5", input.checked);
+        });
+
+        let subtotal = qty === "1" ? 495 : 950;
+        let deliveryCharge = qty === "1" ? areaCharge : 0;
+        let total = subtotal + deliveryCharge;
+
+        // Display values in Bengali digits
+        document.getElementById("subtotal").innerText =
+          toBengaliNumber(subtotal);
+
+        if (deliveryCharge === 0) {
+          document.getElementById("delivery-display").innerText = "ফ্রি!";
+          document.getElementById("delivery-display").classList.remove("");
+        } else {
+          document.getElementById("delivery-display").innerText =
+            "৳ " + toBengaliNumber(deliveryCharge);
+          document.getElementById("delivery-display").classList.add("");
+        }
+
+        document.getElementById("total").innerText = toBengaliNumber(total);
+      }
+
+      // Initial call to set correct digits on load
+      updateSummary();
+    </script>
+    <!-- Gsap -->
+    <script>
+      // Register the plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animate Section Headings (Fade in and move up)
+      gsap.utils.toArray("h2").forEach((heading) => {
+        gsap.from(heading, {
+          scrollTrigger: {
+            trigger: heading,
+            start: "top 85%",
+          },
+          y: 50,
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out",
         });
       });
     </script>
