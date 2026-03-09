@@ -36,7 +36,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
       html,
       body {
@@ -65,7 +69,7 @@
         <div class="flex flex-col md:flex-row items-center gap-12">
           <div class="md:w-1/2 text-center md:text-left">
             <div
-              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-100 text-pink-700 text-sm font-bold mb-6 border border-pink-200"
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-100 text-pink-700 text-sm font-bold mb-6 border border-pink-200 animate-bounce"
             >
               <i class="fas fa-mountain"></i> সরাসরি হিমালয় থেকে সংগৃহীত
             </div>
@@ -96,11 +100,11 @@
                 >
                 <div class="flex items-baseline gap-2 font-noto">
                   <span class="text-3xl font-black font-noto text-gray-900"
-                    >৳৬৯০</span
+                    >৳৮৯০</span
                   >
                   <span
                     class="text-sm font-medium text-gray-400 font-noto line-through"
-                    >৳৮৫০</span
+                    >৳১০৯০</span
                   >
                 </div>
               </div>
@@ -125,14 +129,14 @@
             </div>
           </div>
 
-          <div class="md:w-1/2 relative">
+          <div class="md:w-1/2 relative group">
             <div
               class="relative z-10 w-full max-w-md mx-auto aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl transition-transform duration-500 border-[10px] border-white bg-white"
             >
               <img
-                src="pink-salt-jar.jpg"
+                src="img/pink-salt-jar.jpg"
                 alt="Himalayan Pink Salt Premium Pack"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover group-hover:scale-110 duration-300 transform-all"
               />
             </div>
 
@@ -178,7 +182,7 @@
             <h2
               class="text-3xl md:text-5xl font-black text-gray-900 leading-tight"
             >
-              হিমালয়ের পর্বত থেকে <br />
+              হিমালয় পর্বত থেকে <br />
               <span class="text-pink-600">আসা প্রাকৃতিক বিস্ময়</span>
             </h2>
 
@@ -192,34 +196,125 @@
               বিশুদ্ধ।
             </p>
 
-            <div class="grid grid-cols-2 gap-4 pt-4">
-              <div class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-2 pt-4">
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
                 <span
-                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs"
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
                   >Ca</span
                 >
                 <span class="font-bold text-gray-800">ক্যালসিয়াম</span>
               </div>
-              <div class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3">
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
                 <span
-                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs"
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
                   >Mg</span
                 >
                 <span class="font-bold text-gray-800">ম্যাগনেসিয়াম</span>
               </div>
-              <div class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3">
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
                 <span
-                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs"
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
                   >K</span
                 >
                 <span class="font-bold text-gray-800">পটাশিয়াম</span>
               </div>
-              <div class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3">
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
                 <span
-                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs"
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
                   >Fe</span
                 >
                 <span class="font-bold text-gray-800">আয়রন</span>
+              </div>
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
+                <span
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
+                  >I</span
+                >
+                <span class="font-bold text-gray-800">আয়োডিন</span>
+              </div>
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
+                <span
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
+                  >Zn</span
+                >
+                <span class="font-bold text-gray-800">জিংক</span>
+              </div>
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
+                <span
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
+                  >Cu</span
+                >
+                <span class="font-bold text-gray-800">কপার</span>
+              </div>
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
+                <span
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
+                  >NaCl</span
+                >
+                <span class="font-bold text-gray-800">সোডিয়াম</span>
+              </div>
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
+                <span
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
+                  >Mn</span
+                >
+                <span class="font-bold text-gray-800">ম্যাঙ্গানিজ</span>
+              </div>
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
+                <span
+                  class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
+                  >P</span
+                >
+                <span class="font-bold text-gray-800">ফসফরাস</span>
+              </div>
+
+              <div
+                class="bg-pink-50 p-4 rounded-2xl flex items-center gap-3 border border-pink-100 shadow-sm"
+              >
+                <span
+                  class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-xs shadow-inner"
+                  >Se</span
+                >
+                <span class="font-bold text-gray-800">সেলেনিয়াম</span>
+              </div>
+
+              <div
+                class="bg-pink-600 p-4 rounded-2xl flex items-center gap-3 border border-pink-700 shadow-md"
+              >
+                <span
+                  class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pink-600 font-bold text-sm shadow-inner"
+                  >84+</span
+                >
+                <span class="font-bold text-white">অন্যান্য খনিজ</span>
               </div>
             </div>
           </div>
@@ -236,28 +331,69 @@
                 <div
                   class="flex items-center justify-between pb-4 border-b border-gray-200"
                 >
-                  <span class="text-gray-500 font-medium">উপাদান</span>
-                  <div class="flex gap-8 text-sm font-bold">
+                  <span class="text-gray-500 font-medium text-sm md:text-base"
+                    >তুলনামূলক পার্থক্য</span
+                  >
+                  <div class="flex gap-8 text-sm font-black">
                     <span class="text-red-400">সাদা লবণ</span>
                     <span class="text-pink-600">পিঙ্ক সল্ট</span>
                   </div>
                 </div>
+
                 <div class="flex items-center justify-between">
-                  <span class="text-gray-700 font-bold">প্রাকৃতিক খনিজ</span>
+                  <span class="text-gray-700 font-bold text-sm md:text-base"
+                    >প্রাকৃতিক খনিজ</span
+                  >
                   <div class="flex gap-16 md:gap-20 items-center">
                     <i class="fas fa-times-circle text-red-400"></i>
                     <i class="fas fa-check-circle text-pink-600"></i>
                   </div>
                 </div>
+
                 <div class="flex items-center justify-between">
-                  <span class="text-gray-700 font-bold">কেমিক্যাল মুক্ত</span>
+                  <span class="text-gray-700 font-bold text-sm md:text-base"
+                    >কেমিক্যাল মুক্ত</span
+                  >
                   <div class="flex gap-16 md:gap-20 items-center">
                     <i class="fas fa-times-circle text-red-400"></i>
                     <i class="fas fa-check-circle text-pink-600"></i>
                   </div>
                 </div>
+
                 <div class="flex items-center justify-between">
-                  <span class="text-gray-700 font-bold">pH ব্যালান্স</span>
+                  <span class="text-gray-700 font-bold text-sm md:text-base"
+                    >pH ব্যালান্স</span
+                  >
+                  <div class="flex gap-16 md:gap-20 items-center">
+                    <i class="fas fa-times-circle text-red-400"></i>
+                    <i class="fas fa-check-circle text-pink-600"></i>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-700 font-bold text-sm md:text-base"
+                    >অ্যান্টি-কেকিং মুক্ত</span
+                  >
+                  <div class="flex gap-16 md:gap-20 items-center">
+                    <i class="fas fa-times-circle text-red-400"></i>
+                    <i class="fas fa-check-circle text-pink-600"></i>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-700 font-bold text-sm md:text-base"
+                    >ইলেক্ট্রোলাইট</span
+                  >
+                  <div class="flex gap-16 md:gap-20 items-center">
+                    <i class="fas fa-times-circle text-red-400"></i>
+                    <i class="fas fa-check-circle text-pink-600"></i>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between">
+                  <span class="text-gray-700 font-bold text-sm md:text-base"
+                    >প্রাকৃতিক উপায়ে আহরিত</span
+                  >
                   <div class="flex gap-16 md:gap-20 items-center">
                     <i class="fas fa-times-circle text-red-400"></i>
                     <i class="fas fa-check-circle text-pink-600"></i>
@@ -274,12 +410,43 @@
             </div>
           </div>
         </div>
+        <!-- ############# START CTA BUTTON SECTION ############# -->
+        <div class="flex justify-center mt-6">
+          <button
+            onclick="
+              document
+                .getElementById('order-form')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+            class="inline-flex items-center justify-center transition-all duration-300 active:scale-95 font-bold px-10 py-4 gap-3 rounded-full text-lg md:text-2xl bg-pink-50 text-pink-700 border-4 border-pink-500 animate-pulse shadow-[0_10px_25px_rgba(219,39,119,0.3)] hover:bg-pink-600 hover:text-white hover:border-pink-700 group"
+          >
+            <svg
+              class="w-6 h-6 md:w-8 md:h-8 group-hover:rotate-12 transition-transform"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                fill="currentColor"
+                opacity="0.2"
+              />
+              <path
+                d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <span class="font-anekBangla tracking-wide">এখনি অর্ডার করুন</span>
+          </button>
+        </div>
+        <!-- ############# END CTA BUTTON SECTION ############# -->
       </div>
     </section>
     <!-- ================= CERTIFICATIONS SECTION ================= -->
-    <section id="certifications" class="py-16 md:py-24 bg-white">
+    <section id="certifications" class="pb-6 md:pb-10 bg-white">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
+        <div class="text-center mb-6">
           <h2
             class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-hind"
           >
@@ -287,13 +454,14 @@
           </h2>
           <div class="w-20 h-1 bg-pink-600 mx-auto rounded-full"></div>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto font-hind">
-            রয়্যাল এসেন্স ঘি কঠোর মাননিয়ন্ত্রণ প্রক্রিয়া পার হয়ে আপনার কাছে
-            পৌঁছায়। আমাদের বিশ্বাসযোগ্যতার সনদসমূহ:
+            আমাদের হিমালয়ান পিঙ্ক সল্ট কঠোর মাননিয়ন্ত্রণ ও স্বাস্থ্যসম্মত
+            প্রক্রিয়ায় আপনার কাছে পৌঁছায়। আমাদের বিশুদ্ধতা ও নির্ভরযোগ্যতার
+            সনদসমূহ:
           </p>
         </div>
 
         <div
-          class="flex flex-wrap justify-center items-center gap-10 md:gap-16 lg:gap-20"
+          class="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-20"
         >
           <!-- ISO -->
           <div
@@ -302,7 +470,7 @@
             <img
               src="img/cert-iso-22000.png"
               alt="ISO 22000 Certified"
-              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              class="h-16 md:h-20 object-contain transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
@@ -317,7 +485,7 @@
             <img
               src="img/cert-halal.png"
               alt="Halal Certified"
-              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              class="h-16 md:h-20 object-contain transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
@@ -332,7 +500,7 @@
             <img
               src="img/cert-haccp.png"
               alt="HACCP Certified"
-              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              class="h-16 md:h-20 object-contain transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
@@ -347,7 +515,7 @@
             <img
               src="img/gmp-quality.png"
               alt="GMP Quality"
-              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              class="h-16 md:h-20 object-contain transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
@@ -362,20 +530,13 @@
             <img
               src="img/cert-bsti.png"
               alt="BSTI Approved"
-              class="h-20 md:h-24 object-contain transition-transform duration-300 group-hover:scale-110"
+              class="h-16 md:h-20 object-contain transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
             />
             <span class="mt-3 text-sm font-medium text-gray-800 font-inter"
               >BSTI Approved</span
             >
           </div> -->
-        </div>
-        <div class="flex justify-center mt-4">
-          <img
-            src="img/check-out-security.webp"
-            alt="Security Checkout"
-            className="w-full h-auto object-contain "
-          />
         </div>
       </div>
     </section>
@@ -419,7 +580,7 @@
           <div
             class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-600 text-3xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition-all"
           >
-            <i class="fas fa-tint"></i>
+            <i class="fas fa-hand-holding-water"></i>
           </div>
           <h3 class="text-xl font-bold text-gray-900 mb-4">হাইড্রেট রাখে</h3>
           <p class="text-gray-600 leading-relaxed">
@@ -491,6 +652,38 @@
           </p>
         </div>
       </div>
+
+      <!-- ############# START CTA BUTTON SECTION ############# -->
+      <div class="flex justify-center mt-6">
+        <button
+          onclick="
+            document
+              .getElementById('order-form')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+          class="inline-flex items-center justify-center transition-all duration-300 active:scale-95 font-bold px-10 py-4 gap-3 rounded-full text-lg md:text-2xl bg-pink-50 text-pink-700 border-4 border-pink-500 animate-pulse shadow-[0_10px_25px_rgba(219,39,119,0.3)] hover:bg-pink-600 hover:text-white hover:border-pink-700 group"
+        >
+          <svg
+            class="w-6 h-6 md:w-8 md:h-8 group-hover:rotate-12 transition-transform"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              fill="currentColor"
+              opacity="0.2"
+            />
+            <path
+              d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+              fill="currentColor"
+            />
+          </svg>
+
+          <span class="font-anekBangla tracking-wide">এখনি অর্ডার করুন</span>
+        </button>
+      </div>
+      <!-- ############# END CTA BUTTON SECTION ############# -->
     </section>
     <!-- ================= VERSATILE USES SECTION ================= -->
     <section class="py-16 md:py-24 bg-white font-hind overflow-hidden">
@@ -516,7 +709,7 @@
           <div class="md:w-1/2 relative group">
             <div class="rounded-3xl overflow-hidden shadow-xl aspect-[2/1]">
               <img
-                src="pink-salt-cooking.jpg"
+                src="img/pink-salt-cooking.jpg"
                 alt="Cooking with Pink Salt"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -545,7 +738,7 @@
           <div class="md:w-1/2 relative group">
             <div class="rounded-3xl overflow-hidden shadow-xl aspect-[2/1]">
               <img
-                src="pink-salt-detox.jpg"
+                src="img/pink-salt-detox.jpg"
                 alt="Pink Salt Detox Drink"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -572,7 +765,7 @@
           <div class="md:w-1/2 relative group">
             <div class="rounded-3xl overflow-hidden shadow-xl aspect-[2/1]">
               <img
-                src="pink-salt-skin.jpg"
+                src="img/pink-salt-skin.jpg"
                 alt="Pink Salt Skin Care"
                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -645,7 +838,7 @@
               ></i>
             </div>
 
-            <div class="space-y-4 font-hind">
+            <div class="space-y-4 font-noto">
               <h4 class="text-xl font-bold text-gray-900">
                 অর্ডারের নিয়মাবলী:
               </h4>
@@ -656,7 +849,11 @@
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check-circle text-pink-500 mt-1"></i> ঢাকার
-                  বাইরে কুরিয়ার চার্জ ১৫০ টাকা।
+                  আশেপাশে কুরিয়ার চার্জ ৯০ টাকা।
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fas fa-check-circle text-pink-500 mt-1"></i> ঢাকার
+                  বাইরে কুরিয়ার চার্জ ১২০ টাকা।
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="fas fa-check-circle text-pink-500 mt-1"></i> পণ্য
@@ -717,7 +914,7 @@
                     />
                     <div class="ml-3 text-sm">
                       <span class="block font-bold">১টি জার (১ কেজি)</span>
-                      <span class="text-gray-500">৳৬৯০ + ডেলিভারি</span>
+                      <span class="text-gray-500">৳৮৯০ + ডেলিভারি</span>
                     </div>
                   </label>
                   <label
@@ -733,10 +930,34 @@
                     <div class="ml-3 text-sm">
                       <span class="block font-bold">২টি জার (২ কেজি)</span>
                       <span class="text-green-600 font-bold"
-                        >৳১৩৮০ (ফ্রি ডেলিভারি)</span
+                        >৳১৭৮০ (ফ্রি ডেলিভারি)</span
                       >
                     </div>
                   </label>
+
+                  <div
+                    class="col-span-2 mt-2 p-4 bg-orange-50 border border-dashed border-orange-300 rounded-xl flex items-center justify-between"
+                  >
+                    <div class="flex items-center gap-3">
+                      <span class="flex h-3 w-3 relative">
+                        <span
+                          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"
+                        ></span>
+                        <span
+                          class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"
+                        ></span>
+                      </span>
+                      <p class="text-xs md:text-sm text-amber-900">
+                        আরও বেশি বা পাইকারি নিতে চান?
+                      </p>
+                    </div>
+                    <a
+                      href="tel:01733358158"
+                      class="text-sm md:text-base font-black text-pink-700 hover:underline"
+                    >
+                      কল করুন: 017333 58158
+                    </a>
+                  </div>
                 </div>
 
                 <div
@@ -753,9 +974,9 @@
                         type="radio"
                         name="area"
                         value="60"
+                        class="hidden"
                         checked
                         onchange="updateSummary()"
-                        class="hidden"
                       />
                       <span class="text-xs font-bold">ঢাকা সিটি</span>
                       <span class="text-xs text-pink-600">৳৬০</span>
@@ -766,12 +987,12 @@
                       <input
                         type="radio"
                         name="area"
-                        value="100"
-                        onchange="updateSummary()"
+                        value="90"
                         class="hidden"
+                        onchange="updateSummary()"
                       />
-                      <span class="text-xs font-bold">আশেপাশে</span>
-                      <span class="text-xs text-pink-600">৳১০০</span>
+                      <span class="text-xs font-bold">ঢাকার আশেপাশে</span>
+                      <span class="text-xs text-pink-600">৳৯০</span>
                     </label>
                     <label
                       class="flex flex-col items-center p-2 border rounded-lg cursor-pointer text-center bg-white hover:border-pink-500 transition-all"
@@ -779,12 +1000,12 @@
                       <input
                         type="radio"
                         name="area"
-                        value="150"
-                        onchange="updateSummary()"
+                        value="120"
                         class="hidden"
+                        onchange="updateSummary()"
                       />
                       <span class="text-xs font-bold">ঢাকার বাইরে</span>
-                      <span class="text-xs text-pink-600">৳১৫০</span>
+                      <span class="text-xs text-pink-600">৳১২০</span>
                     </label>
                   </div>
                 </div>
@@ -822,6 +1043,130 @@
         </div>
       </div>
     </section>
+
+    <div
+      id="successPopup"
+      class="fixed inset-0 bg-gray-900/50 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-3xl p-8 shadow-2xl max-w-sm w-full text-center transform transition-all scale-95"
+        id="popupContent"
+      >
+        <div
+          class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-5xl mx-auto mb-6"
+        >
+          <i class="fas fa-check"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-950 mb-2 font-hind">
+          অর্ডার সফল হয়েছে!
+        </h3>
+        <p class="text-gray-600 mb-6 font-hind">
+          আমাদের প্রতিনিধি দ্রুতই আপনার সাথে যোগাযোগ করবেন।
+        </p>
+        <button
+          onclick="closePopup()"
+          class="w-full py-3 bg-primary text-white font-bold rounded-xl hover:bg-amber-900 transition font-hind"
+        >
+          ধন্যবাদ
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function toBengaliNumber(n) {
+        const englishDigits = {
+          0: "০",
+          1: "১",
+          2: "২",
+          3: "৩",
+          4: "৪",
+          5: "৫",
+          6: "৬",
+          7: "৭",
+          8: "৮",
+          9: "৯",
+        };
+        return n
+          .toString()
+          .split("")
+          .map((digit) => englishDigits[digit] || digit)
+          .join("");
+      }
+
+      function updateSummary() {
+        const qty = document.querySelector('input[name="qty"]:checked').value;
+        const areaInput = document.querySelector('input[name="area"]:checked');
+        const areaCharge = parseInt(areaInput.value);
+
+        // Highlight Area Labels
+        document.querySelectorAll('input[name="area"]').forEach((input) => {
+          input.parentElement.classList.toggle(
+            "border-pink-500",
+            input.checked,
+          );
+          input.parentElement.classList.toggle("bg-pink-200/5", input.checked);
+        });
+
+        // Highlight Quantity Labels
+        document.querySelectorAll('input[name="qty"]').forEach((input) => {
+          input.parentElement.classList.toggle(
+            "border-pink-500",
+            input.checked,
+          );
+          input.parentElement.classList.toggle("bg-pink-500/5", input.checked);
+          input.parentElement.classList.toggle(
+            "border-gray-200",
+            !input.checked,
+          );
+        });
+
+        // Prices for Mangrove Gold Honey (990 Taka)
+        let subtotal = qty === "1" ? 990 : 1980;
+        let deliveryCharge = qty === "1" ? areaCharge : 0;
+        let total = subtotal + deliveryCharge;
+
+        document.getElementById("subtotal").innerText =
+          toBengaliNumber(subtotal);
+
+        const deliveryEl = document.getElementById("delivery-display");
+        if (deliveryCharge === 0) {
+          deliveryEl.innerText = "ফ্রি!";
+          deliveryEl.classList.remove("font-noto");
+        } else {
+          deliveryEl.innerText = "৳ " + toBengaliNumber(deliveryCharge);
+          deliveryEl.classList.add("font-noto");
+        }
+
+        document.getElementById("total").innerText = toBengaliNumber(total);
+      }
+
+      // Initial update
+      updateSummary();
+
+      // Popup Logic
+      const orderForm = document.getElementById("orderForm");
+      const successPopup = document.getElementById("successPopup");
+      const popupContent = document.getElementById("popupContent");
+
+      orderForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        successPopup.classList.remove("hidden");
+        setTimeout(() => {
+          popupContent.classList.remove("scale-95");
+          popupContent.classList.add("scale-100");
+        }, 10);
+      });
+
+      function closePopup() {
+        popupContent.classList.remove("scale-100");
+        popupContent.classList.add("scale-95");
+        setTimeout(() => {
+          successPopup.classList.add("hidden");
+          orderForm.reset();
+          updateSummary();
+        }, 300);
+      }
+    </script>
     <!-- ================= ORDER FROM SECTION ================= -->
 
     <!-- ================= TESTIMONIALS SECTION ================= -->
@@ -935,10 +1280,22 @@
             ></i>
           </div>
         </div>
+
+        <div class="mt-16 text-center">
+          <p class="text-gray-500 mb-6 font-hind">
+            আপনিও কি হিমালয়ান পিঙ্ক সল্টের স্বাদ নিতে চান?
+          </p>
+          <a
+            href="#order-form"
+            class="inline-flex items-center gap-2 text-pink-600 font-bold border-b-2 border-pink-700 pb-1 hover:gap-4 transition-all"
+          >
+            আজই আপনার অর্ডারটি বুক করুন <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </section>
 
-    <footer
+    <!-- <footer
       class="bg-gray-950 py-6 text-white font-hind border-t border-gray-900"
     >
       <div class="max-w-7xl mx-auto px-6 text-center">
@@ -964,7 +1321,7 @@
           </a>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- ================= FLOATING WAHTSAPP BUTTON ================= -->
     <div class="fixed bottom-6 right-6 z-50">
       <a
